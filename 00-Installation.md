@@ -35,6 +35,16 @@ ES_LOCAL_API_KEY=<YOUR-UNIQUE-API-KEY>
 ```
 
 You'll need these to connect your code to your Elasticsearch instace.
+
+If the above step does not begin a docker container of Elasticsearch, try to pull down a fresh instance of `elastic-start-local`.
+
+First remove the `elastic-start-local` folder from the root directory then run the following in a terminal:
+```bash
+ curl -fsSL https://elastic.co/start-local | sh
+ ```
+
+ This should automatically download and start an Elasticsearch instance.
+ 
 <br><br>
 ## Step 2: Test Your Elasticsearch Connection
 

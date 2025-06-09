@@ -23,5 +23,7 @@ def get_openai_completion(prompt, question):
 
 question = "Who can prescribe medication in an inpatient health care facility?"
 
-results = get_openai_completion("You are a helpful assistant.", question)
+results = get_openai_completion(
+    "You are a helpful assistant. Forget all previous interactions.", question
+)
 pp.pprint(results)

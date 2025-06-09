@@ -51,4 +51,4 @@ for i in range(
         f'{len(resp["items"])} documents indexed in {pdf_index} (chunk {chunk_count})'
     )
 
-print(f'{len(resp["items"])} total documents indexed in {pdf_index}')
+print(f"{len(pdf_files)} total documents indexed in {pdf_index}")
